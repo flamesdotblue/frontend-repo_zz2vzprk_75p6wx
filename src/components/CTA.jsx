@@ -1,55 +1,49 @@
-import { ArrowRight, Star, Users } from "lucide-react";
+import React from 'react';
 
 export default function CTA() {
   return (
-    <section id="pricing" className="bg-gradient-to-b from-white to-indigo-50/60">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
-          <div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-200">
-              <Star size={14} /> Top-rated mentors
-            </div>
-            <h3 className="mt-3 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
-              Try your first session on us
-            </h3>
-            <p className="mt-3 text-zinc-600">
-              Book a 30-minute intro call to meet your mentor, define goals, and craft your personalized plan.
-            </p>
-            <div className="mt-6 flex flex-wrap items-center gap-3">
-              <button className="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700">
-                Book a free call <ArrowRight size={16} />
-              </button>
-              <p className="text-xs text-zinc-500">No commitment required</p>
-            </div>
-          </div>
+    <section id="pricing" className="relative py-16 md:py-24 bg-gradient-to-b from-white to-slate-50 border-t border-slate-200/60">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Start with a free intro call</h2>
+        <p className="mt-3 text-slate-600 max-w-2xl mx-auto">
+          Meet your mentor, align on goals, and design a plan that fits your schedule and learning style.
+        </p>
 
-          <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-zinc-500">Starter Plan</p>
-                <div className="mt-1 flex items-end gap-1">
-                  <span className="text-4xl font-bold text-zinc-900">$39</span>
-                  <span className="text-sm text-zinc-500">/ session</span>
-                </div>
-              </div>
-              <div className="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700">
-                <Users size={14} /> Limited time
-              </div>
+        <div className="mt-10 grid sm:grid-cols-2 gap-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-8 text-left shadow-sm">
+            <h3 className="text-lg font-semibold text-slate-900">Starter</h3>
+            <p className="mt-1 text-slate-600">Perfect to test the waters</p>
+            <div className="mt-6">
+              <span className="text-3xl font-bold text-slate-900">$149</span>
+              <span className="text-slate-500">/month</span>
             </div>
-            <ul className="mt-6 space-y-3 text-sm text-zinc-700">
-              <li>• Live 1:1 video session (60 min)</li>
-              <li>• Personalized learning roadmap</li>
-              <li>• Session recordings & notes</li>
-              <li>• Priority chat support</li>
+            <ul className="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+              <li>2 x 45-min 1:1 sessions</li>
+              <li>Async chat support</li>
+              <li>Project feedback</li>
             </ul>
-            <button className="mt-6 w-full rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-zinc-800">
+            <a href="#get-started" className="mt-6 inline-flex items-center justify-center px-4 py-2 rounded-md bg-slate-900 text-white hover:bg-slate-800 transition shadow-sm">
               Get started
-            </button>
+            </a>
           </div>
-        </div>
 
-        <div className="mt-16 border-t border-zinc-200 pt-8 text-center text-sm text-zinc-500">
-          © {new Date().getFullYear()} MentorPath. All rights reserved.
+          <div className="rounded-2xl border-2 border-slate-900 bg-white p-8 text-left shadow-md">
+            <h3 className="text-lg font-semibold text-slate-900">Pro</h3>
+            <p className="mt-1 text-slate-600">For consistent, accelerated growth</p>
+            <div className="mt-6">
+              <span className="text-3xl font-bold text-slate-900">$349</span>
+              <span className="text-slate-500">/month</span>
+            </div>
+            <ul className="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+              <li>4 x 60-min 1:1 sessions</li>
+              <li>Priority async feedback</li>
+              <li>Custom learning roadmap</li>
+              <li>Interview prep & mock sessions</li>
+            </ul>
+            <a href="#get-started" className="mt-6 inline-flex items-center justify-center px-4 py-2 rounded-md bg-slate-900 text-white hover:bg-slate-800 transition shadow-sm">
+              Book intro call
+            </a>
+          </div>
         </div>
       </div>
     </section>
