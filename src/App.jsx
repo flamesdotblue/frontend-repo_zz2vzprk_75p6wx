@@ -1,9 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
-import WhatWeDo from './components/WhatWeDo';
-import WhyChooseUs from './components/WhyChooseUs';
 import Features from './components/Features';
 import CTA from './components/CTA';
 
@@ -13,9 +10,6 @@ export default function App() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <About />
-        <WhatWeDo />
-        <WhyChooseUs />
         <Features />
         <CTA />
       </main>
