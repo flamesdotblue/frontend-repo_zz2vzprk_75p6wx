@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative w-full h-[88vh] sm:h-[92vh] overflow-hidden bg-white">
       {/* 3D Background */}
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/7m4PRZ7kg6K1jPfF/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <Spline scene="https://prod.spline.design/N8g2VNcx8Rycz93J/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
       {/* Soft light gradient veil to keep overall light theme while letting the 3D shine */}
