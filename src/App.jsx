@@ -1,6 +1,9 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About';
+import WhatWeDo from './components/WhatWeDo';
+import WhyChooseUs from './components/WhyChooseUs';
 import Features from './components/Features';
 import CTA from './components/CTA';
 
@@ -10,6 +13,9 @@ export default function App() {
       <Navbar />
       <main className="flex-1">
         <Hero />
+        <About />
+        <WhatWeDo />
+        <WhyChooseUs />
         <Features />
         <CTA />
       </main>
@@ -17,9 +23,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p>© {new Date().getFullYear()} MentorLink. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a className="hover:text-slate-900" href="#">Privacy</a>
-            <a className="hover:text-slate-900" href="#">Terms</a>
-            <a className="hover:text-slate-900" href="#">Contact</a>
+            <a className="hover:text-slate-900" href="#privacy">Privacy</a>
+            <a className="hover:text-slate-900" href="#terms">Terms</a>
+            <a className="hover:text-slate-900" href="#contact">Contact</a>
           </div>
         </div>
       </footer>
